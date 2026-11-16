@@ -13,6 +13,9 @@
       "onAutoForward": "notify"
     }
   },
+  "otherPortsAttributes": {
+    "onAutoForward": "silent"
+  },
   "customizations": {
     "codespaces": {
       "openFiles": ["README.md"]
