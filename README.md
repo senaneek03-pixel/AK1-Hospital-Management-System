@@ -3,6 +3,9 @@
 A modern desktop frontend for a hospital management system, built with **Python Tkinter**.
 Advanced Programming Practice project (2nd Year) by **Aneek Sen**.
 
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/senaneek03-pixel/AK1-Hospital-Management-System)
+&nbsp; Run the app in your browser. See [Run it in your browser](#run-it-in-your-browser-github-codespaces).
+
 ![Dashboard](screenshots/03_Dashboard.png)
 
 ## Screens
@@ -44,6 +47,25 @@ Demo login: **admin / admin123**
 
 On first run the app creates `ak1_hospital.db` with sample patients, doctors, appointments and bills.
 The interface is designed for Windows (Segoe UI fonts and icons) and falls back to plain symbols on other systems.
+
+## Run it in your browser (GitHub Codespaces)
+
+No installation needed. You only need a GitHub account.
+
+1. Click the green **Code** button, open the **Codespaces** tab and click **Create codespace on main**.
+2. Wait 1–2 minutes while the codespace builds.
+3. Open the **Ports** tab, find port **6080 (Desktop)** and click the globe icon to open it in a new browser tab.
+4. Click **Connect** and enter the password **`vscode`**. A Linux desktop appears.
+5. Back in the codespace terminal, run:
+
+   ```bash
+   python ak1_hospital.py
+   ```
+
+   The app window opens on the browser desktop. Log in with **admin / admin123**.
+
+Codespaces runs on Linux, so the app uses plain fonts and symbols instead of the Windows Segoe icons. Everything else works the same.
+Codespaces uses your free monthly GitHub Codespaces hours; stop the codespace when you are done.
 
 ## Tech stack
 
