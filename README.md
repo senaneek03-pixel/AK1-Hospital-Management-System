@@ -53,16 +53,17 @@ The interface is designed for Windows (Segoe UI fonts and icons) and falls back 
 No installation needed. You only need a GitHub account.
 
 1. Click the green **Code** button, open the **Codespaces** tab and click **Create codespace on main**.
-2. Wait 1–2 minutes while the codespace builds.
-3. Open the **Ports** tab, find port **6080 (Desktop)** and click the globe icon to open it in a new browser tab.
-4. Click **Connect** and enter the password **`vscode`**. A Linux desktop appears.
-5. Back in the codespace terminal, run:
+2. Wait 2–3 minutes while the codespace builds and installs Tkinter.
+3. In the codespace **Terminal**, run:
 
    ```bash
-   python ak1_hospital.py
+   bash .devcontainer/run-app.sh
    ```
 
-   The app window opens on the browser desktop. Log in with **admin / admin123**.
+4. Open the **Ports** tab, find port **6080 (Desktop)** and click the globe icon to open it in a new browser tab.
+5. Click **Connect**. The AK1 Hospital window is on the desktop. Log in with **admin / admin123**.
+
+The `run-app.sh` script installs anything that is missing, so it also works in an older codespace.
 
 Codespaces runs on Linux, so the app uses plain fonts and symbols instead of the Windows Segoe icons. Everything else works the same.
 Codespaces uses your free monthly GitHub Codespaces hours; stop the codespace when you are done.

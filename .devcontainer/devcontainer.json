@@ -1,24 +1,18 @@
 {
   "name": "AK1 Hospital (Tkinter desktop in the browser)",
-  "image": "mcr.microsoft.com/devcontainers/python:1-3.12-bookworm",
-  "features": {
-    "ghcr.io/devcontainers/features/desktop-lite:1": {}
-  },
+  "image": "mcr.microsoft.com/devcontainers/base:jammy",
   "containerEnv": {
     "DISPLAY": ":1"
   },
+  "postCreateCommand": "bash .devcontainer/setup.sh",
+  "postStartCommand": "bash .devcontainer/start-desktop.sh",
   "forwardPorts": [6080],
   "portsAttributes": {
     "6080": {
       "label": "Desktop (open this to see the app)",
-      "onAutoForward": "openBrowser"
-    },
-    "5901": {
-      "label": "VNC",
-      "onAutoForward": "ignore"
+      "onAutoForward": "notify"
     }
   },
-  "postAttachCommand": "echo 'Open the Desktop (port 6080, password: vscode), then run: python ak1_hospital.py'",
   "customizations": {
     "codespaces": {
       "openFiles": ["README.md"]
